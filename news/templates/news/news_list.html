@@ -1,3 +1,4 @@
+<!-- news/templates/news/news_list.html -->
 <!DOCTYPE html>
 <html>
 
@@ -9,10 +10,7 @@
     <h1>News List</h1>
     <ul>
         {% for item in news %}
-        <li>
-            <a href="{% url 'news_detail' item.pk %}">{{ item.title }}</a>
-            <p>{{ item.created_at }}</p>
-        </li>
+        <li><a href="{% url 'news_detail' item.id %}">{{ item.title }}</a></li>
         {% endfor %}
     </ul>
 </body>
