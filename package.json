@@ -1,0 +1,11 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "python manage.py collectstatic"
+  },
+  "author": "",
+  "license": "ISC"
+}
